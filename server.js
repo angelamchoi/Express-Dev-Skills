@@ -18,20 +18,14 @@ app.use(logger('dev'));
 
 app.use(express.json());
 
-// takes anything submitted by a form and adds it to the req.body
 app.use(express.urlencoded({ extended: false }));
-// looks at the form submitted, IF there is a property on the req.body === _method, then convert the current verb to the type of verb in the _method value
 
-/**
- * req.body = { _method: 'DELETE' }
- */
 app.use(methodOverride('_method'));
 
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(function (req, res, next) {
-  console.log('Saving Req Timestamp');
   req.time = new Date().toLocaleTimeString();
   next();
 });
