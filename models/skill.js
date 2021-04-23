@@ -1,9 +1,9 @@
 const skills = [
-    { id: 1, skill: 'HTML', done: true },
-    { id: 2, skill: 'CSS',  done: true },
-    { id: 3, skill: 'JavaScript', done: true },
-    { id: 4, skill: 'React', done: false},
-    { id: 5, skill: 'Python', done: false}
+    { id: 1, skill: '1️⃣HTML', done: true },
+    { id: 2, skill: '2️⃣CSS',  done: true },
+    { id: 3, skill: '3️⃣JavaScript', done: true },
+    { id: 4, skill: '4️⃣Python', done: false},
+    { id: 5, skill: '5️⃣React', done: false}
   ];
   
   function getOne(id) {

@@ -26,7 +26,6 @@ function create(req, res) {
 
 function destroy(req, res) {
   const skillId = req.params.id;
-  // Model is the one that handles the data management, all we need to do is give the unique id so that we can located the correct one to destroy
   Skill.destroy(skillId);
   res.redirect('/skills');
 }
